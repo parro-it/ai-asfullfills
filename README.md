@@ -7,7 +7,7 @@
 
 This module could be a useful substitute for `Promise.all` to use when you need
 to parallelized the resolution of a set of promises and you need to receive the
-resolve promises as soon as possible.
+resolve promises as soon as possible (in resolution order).
 
 > **_This module is part of
 > [Async iterable fun](https://github.com/parro-it/ai-fun), a complete toolset

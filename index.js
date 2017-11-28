@@ -1,5 +1,8 @@
-export default async function* aiAsfullfills(data) {
-  for (const item of data) {
-    yield item;
-  }
+import AsyncIterable from "asynciterable";
+
+export default function aiAsfullfills(data) {
+  return new AsyncIterable((write, end, error) => {
+    const allPromises = data.map(p => p.then(write).catch(error));
+    Promise.all(allPromises).then(() => end());
+  });
 }
