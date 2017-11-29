@@ -1,12 +1,13 @@
 {
   "name": "ai-asfullfills",
   "version": "1.0.0",
-  "description":
-    "Return an aync iterable that emit a series promises as they fullfills",
+  "description": "Return an aync iterable that emit a series promises as they fullfills",
   "repository": "parro-it/ai-asfullfills",
   "author": "Andrea Parodi <andrea@parro.it>",
   "license": "MIT",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "node -r @std/esm test.js | tap-colorize - && linterjs .",
     "doc": "documentation readme index.js --section=API"
@@ -48,6 +49,7 @@
     "tape-async": "^2.3.0"
   },
   "dependencies": {
-    "asynciterable": "^1.1.0"
+    "asynciterable": "^1.1.0",
+    "is-promise": "^2.1.0"
   }
 }
