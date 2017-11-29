@@ -1,6 +1,6 @@
 {
   "name": "ai-asfullfills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Return an aync iterable that emit a series promises as they fullfills",
   "repository": "parro-it/ai-asfullfills",
   "author": "Andrea Parodi <andrea@parro.it>",
